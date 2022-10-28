@@ -1,7 +1,11 @@
-.p intro {
+#intro {
     text-align: center;
 }
 
-.btn start quiz {
-    color: darkmagenta;
+#startquiz {
+    background-color: darkmagenta;
+}
+
+.hide {
+    display: none;
 }
