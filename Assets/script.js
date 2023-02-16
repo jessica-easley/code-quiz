@@ -7,6 +7,7 @@ var answerChoicesEl = document.querySelector("#choices");
 var initialsEl = document.querySelector("#initials");
 var timeInterval;
 var score = 0;
+var questionIndex = 0;
 
 // Timer Counterdown & Start Quiz
 function countdown() {
@@ -23,17 +24,19 @@ function countdown() {
 }
 
 function startQuiz() {
-  buttonEl.classList.add("hide");
+  startButtonEl.classList.add("hide");
+  countdown();
+  displayQuestions();
 }
 
-buttonEl.addEventListener("click", countdown);
-buttonEl.addEventListener("click", startQuiz);
+// startButtonEl.addEventListener("click", countdown);
+startButtonEl.addEventListener("click", startQuiz);
 
 // Quiz Questions & Answer Choices
 
 var questions = [
   {
-    question: "Commonly ssed data types DO NOT include:",
+    question: "Commonly used data types DO NOT include:",
     choices: ["A. strings", "B. alerts", "C. booleans", "D. numbers"],
     answer: "B. alerts",
   },
@@ -60,6 +63,29 @@ var questions = [
     answer: "D. console log",
   },
 ];
+
+// Display Questions & Answer Choices
+
+function displayQuestions() {
+  console.log(questions[3].question)
+  var currentQuestion = questions[questionIndex]
+  var questionTitleEl = document.querySelector("#question-title")
+  var answerBox = document.querySelector("#answers")
+  questionTitleEl.textContent = currentQuestion.question
+  for (var i = 0; i < currentQuestion.choices.length; i++){
+    var buttonEl = document.createElement("button")
+    console.log(currentQuestion.choices[i])
+    buttonEl.textContent = currentQuestion.choices[i]
+    // Add class & value to buttonEL to put an event listener on it that has 
+    // make a function for handling question/answer choice click, check if answer is right or wrong (if/else statement)
+    // Increase question index when it's clicked currentQuestion ++
+    // setAttribute
+  answerBox.appendChild(buttonEl)
+  }
+}
+
+
+
 
 //  Additional Variables
 // var secondsLeft = 75;
