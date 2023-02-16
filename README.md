@@ -1,4 +1,5 @@
 # code-quiz
+
 # User Story
 AS A coding boot camp student
 I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
