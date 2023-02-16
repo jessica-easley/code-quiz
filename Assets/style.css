@@ -2,10 +2,34 @@
     text-align: center;
 }
 
+.button {
+    background-color: lightseagreen;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.button:hover {
+
+    background-color: darkseagreen;
+}
+
 #startquiz {
     background-color: lightseagreen;
+    border-radius: 8px;
 }
 
 .hide {
     display: none;
+}
+
+#submit {
+    background-color: lightseagreen;
+    border-radius: 8px;
+}
+
+#questions {
+    color: black;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
 }
