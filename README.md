@@ -18,9 +18,9 @@ WHEN the game is over
 THEN I can save my initials and score
 
 * Technologies Used
-HTML
-CSS 
-JavaScript
+ - HTML
+ - CSS 
+ - JavaScript
 
 * Screenshots of Application
 
