@@ -1,10 +1,10 @@
-var timerEl = document.getElementById("timer");
-var mainEl = document.getElementById("main");
-var startButtonEl = document.getElementById("startquiz");
-var endButtonEl = document.getElementById("submitquiz");
-var questionsEl = document.getElementById("questions");
-var answerChoicesEl = document.getElementById("choices");
-var initialsEl = document.querySelector("initials");
+var timerEl = document.querySelector("#time");
+var mainEl = document.querySelector("#main");
+var startButtonEl = document.querySelector("#start_quiz");
+var endButtonEl = document.querySelector("#submit_quiz");
+var questionsEl = document.querySelector("#questions");
+var answerChoicesEl = document.querySelector("#choices");
+var initialsEl = document.querySelector("#initials");
 var timeInterval;
 var score = 0;
 

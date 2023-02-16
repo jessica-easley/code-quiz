@@ -2,21 +2,36 @@
     text-align: center;
 }
 
+#time {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .button {
     background-color: lightseagreen;
+    font-size: 20px;
     border-radius: 8px;
     padding: 10px;
     margin-bottom: 10px;
 }
 
 .button:hover {
-
     background-color: darkseagreen;
 }
 
 #startquiz {
     background-color: lightseagreen;
+    font-size: 20px;
     border-radius: 8px;
+}
+
+#highscores {
+    background-color: hotpink;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 8px;
+    
 }
 
 .hide {
@@ -25,11 +40,17 @@
 
 #submit {
     background-color: lightseagreen;
+    font-size: 20px;
     border-radius: 8px;
 }
 
-#questions {
+#question-title {
     color: black;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#answers {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
 }

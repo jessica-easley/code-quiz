@@ -16,3 +16,16 @@ WHEN all questions are answered or the timer reaches 0
 THEN the game is over
 WHEN the game is over
 THEN I can save my initials and score
+
+* Technologies Used
+HTML
+CSS 
+JavaScript
+
+* Screenshots of Application
+
+* Start Screen 
+
+* Question Screen
+
+* Final Screen
