@@ -43,7 +43,7 @@ var questions = [
   {
     question: "The Condition in an if/else statement is enclosed with ____.",
     choices: ["A. quotes", "B. curly brackets", "C. parenthesis", "D. square brackets"],
-    answer: "C. parenthesis",
+    answer: "B. curly brackets",
   },
   {
     question: "Arrays in JavaScript can be used to store ___.",
@@ -79,9 +79,48 @@ function displayQuestions() {
     // Add class & value to buttonEL to put an event listener on it that has 
     // make a function for handling question/answer choice click, check if answer is right or wrong (if/else statement)
     // Increase question index when it's clicked currentQuestion ++
-    // setAttribute
   answerBox.appendChild(buttonEl)
   }
+}
+
+function checkQuestion() {
+  // check for right or wrong answer
+  if(this.value !== question[currentQuestionIndex].answer) {
+    time -= 15
+    if (time , 0) {
+      time = 0;
+    }
+    // updated time
+    timerEl.textContent = time;
+    rightAnswerEl.textContent = "Incorrect";
+  } else {
+    rightAnswerEl.textContent = "Correct"
+  }
+
+  rightAnswerEl.setAttribute("class", "right-answer");
+  setTimeout(function() {
+    rightAnswerEl.setAttribute("class", "right-answer-hide");
+  }, 1000);
+}
+
+currentQuestionIndex++;
+
+if (currentQuestionIndex === question.length) {
+  endQuiz();
+} else {
+  getQuestion();
+}
+
+// end the quiz & show scores
+
+function endQuiz() {
+  clearInterval(timerEl);
+
+  var finalScoreEl = document.querySelector("#final-score");
+  finalScoreEl.textContent = time;
+
+  var highScoreEl = document.querySelector("#high-score");
+  highScoreEl.setAttribute("class", "show");
 }
 
 
