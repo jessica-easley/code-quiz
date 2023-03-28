@@ -3,7 +3,7 @@
 # Description
 This application is a coding quiz that presents the user with a series of multiple choice questions. The code quiz is timed, and once the user clicks on 'Start Quiz' a countdown timer will begin. Each time a user get a question wrong, time will be deducted. If the user answers all questions or the timer runs out, the user can then save their quiz score with their initials.
 
-# View Application Here: 
+# View Application Here: https://jessica-easley.github.io/code-quiz/
 
 # User Story
 AS A coding boot camp student
