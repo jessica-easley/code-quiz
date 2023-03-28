@@ -105,7 +105,7 @@ function checkQuestion() {
 if (questionIndex === questions.length) {
   endQuiz();
 } else {
-  getQuestion();
+  displayQuestions();
 }
   currentQuestion++;
 }
