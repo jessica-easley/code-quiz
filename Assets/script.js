@@ -76,8 +76,8 @@ function displayQuestions() {
     var buttonEl = document.createElement("button")
     console.log(currentQuestion.choices[i])
     buttonEl.textContent = currentQuestion.choices[i]
-    // Add class & value to buttonEL to put an event listener on it that has 
-    // make a function for handling question/answer choice click, check if answer is right or wrong (if/else statement)
+    // Add class & value to buttonEL to put an event listener on it 
+
     // Increase question index when it's clicked currentQuestion ++
   answerBox.appendChild(buttonEl)
   }
@@ -85,7 +85,7 @@ function displayQuestions() {
 
 function checkQuestion() {
   // check for right or wrong answer
-  if(this.value !== question[currentQuestionIndex].answer) {
+  if(this.value !== questions[questionIndex].answer) {
     time -= 15
     if (time , 0) {
       time = 0;
@@ -101,14 +101,13 @@ function checkQuestion() {
   setTimeout(function() {
     rightAnswerEl.setAttribute("class", "right-answer-hide");
   }, 1000);
-}
 
-currentQuestionIndex++;
-
-if (currentQuestionIndex === question.length) {
+if (questionIndex === questions.length) {
   endQuiz();
 } else {
   getQuestion();
+}
+  currentQuestion++;
 }
 
 // end the quiz & show scores
